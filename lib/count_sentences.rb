@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     arr = self.split(".","?","!")
-    
+    clean_arr = arr.reject { |c| c.empty? }
   end
 end
